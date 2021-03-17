@@ -94,7 +94,6 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
 
         $('<span>', {
           html: option.label,
-          class: 'sr-only',
         }).appendTo($label);
 
         if (option.description) {
