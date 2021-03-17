@@ -1,14 +1,18 @@
 .h5p-editor-image-radio-group-container {
   margin-bottom: 1em;
 }
+
 .h5p-editor-image-radio-group-button {
-  padding: .5em 0 0 0;
-  margin-left: .3em;
+  padding: 0.5em 0 0 0;
+  margin-left: 0.3em;
 }
+
 .h5p-editor-image-radio-group-button:hover {
   background-color: #d8d8d8;
 }
-.h5p-editor-image-radio-group-container.horizontal .h5p-editor-image-radio-group-button {
+
+.h5p-editor-image-radio-group-container.horizontal
+  .h5p-editor-image-radio-group-button {
   display: inline-block;
   padding: 0.2rem 0.5rem;
 }
