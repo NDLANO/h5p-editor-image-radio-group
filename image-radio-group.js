@@ -20,7 +20,6 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
       this.field = field;
       this.value = params;
       this.setValue = setValue;
-      console.log(field);
       this.alignment = this.field.alignment || 'vertical';
 
       // Setup event dispatching on change
