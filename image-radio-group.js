@@ -105,6 +105,12 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
 
       self.$container.appendTo($wrapper);
     }
+    
+    validate() {
+      return true;
+    }
+
+    remove() {};
   }
 
   return ImageRadioGroup;
