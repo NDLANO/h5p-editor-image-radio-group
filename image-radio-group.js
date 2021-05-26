@@ -21,6 +21,7 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
       this.value = params;
       this.setValue = setValue;
       this.alignment = this.field.alignment || 'vertical';
+      this.fontFamily = this.field.fontFamily
 
       // Setup event dispatching on change
       this.changes = [];
@@ -70,7 +71,7 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
 
         const $icon = $('<span>', {
           class: 'font-icon',
-          style: `font-family: "H5PFontAwesome4"`,
+          style: `font-family: "${self.fontFamily}"`,
           html: option.fontIcon ? `&#x${option.fontIcon};` : ""
         });
         $icon.appendTo($label);
@@ -105,7 +106,7 @@ H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
 
       self.$container.appendTo($wrapper);
     }
-    
+
     validate() {
       return true;
     }
