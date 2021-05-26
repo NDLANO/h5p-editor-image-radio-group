@@ -3,28 +3,33 @@ H5P Editor Image Radio Group
 
 This editor widget creates a radio group instead of a dropdown for the 'select' type.
 
-The following example is from True/False Question's semantics.json:
+The following example is H5P Three Image semantics.json:
 ```javascript
 {
-  "name": "correct",
+  "name": "iconTypeTextBox",
   "type": "select",
-  "widget": "radioGroup",
+  "label": "Button style",
+  "description": "Decide how the icon should look.",
+  "widget": "imageRadioGroup",
   "alignment": "horizontal",
-  "label": "Correct answer",
+  "fontFamily": "360-Image",
   "options": [
     {
-      "value": "true",
-      "label": "True"
+      "value": "text-icon",
+      "label": "Text Icon",
+      "fontIcon": "e91f"
     },
     {
-      "value": "false",
-      "label": "False"
+      "value": "info-icon",
+      "label": "Info Icon",
+      "fontIcon": "e91a"
+
     }
   ],
-  "default": "true"
+  "default": "text-icon"
 },
 ```
-The example above will create two radio buttons with label 'True' and 'False', which
+The example above will create two radio buttons with label 'Text Icon' and 'Info Icon', with icon retrieved with Unicode from the defined fontFamily, which
 will be aligned horizontally.
 
 ## License
