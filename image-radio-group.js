@@ -3,7 +3,7 @@
  *
  * @param {H5P.jQuery} $
  */
-H5PEditor.ImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
+H5PEditor.NDLAImageRadioGroup = H5PEditor.widgets.imageRadioGroup = (function ($) {
   let groupCounter = 0;
   /**
    * Creates an radio button group.
